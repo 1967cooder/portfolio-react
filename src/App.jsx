@@ -5,6 +5,7 @@ import Skills from "./Components/Skills";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import ErrorPage from "./Components/ErrorPage";
+import CategoryProjects from "./Components/CategoryProjects";
 // import "./App.css";
 
 function App() {
@@ -28,6 +29,12 @@ function App() {
           path: "projects",
           element: <Projects />,
         },
+
+        {
+          path: "projects/:category",
+          element: <CategoryProjects />,
+        },
+
         {
           path: "skills",
           element: <Skills />,
