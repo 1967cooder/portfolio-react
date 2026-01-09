@@ -1,0 +1,199 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Portfolio Silvana",
+      "description": "Portfolio Silvana",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana",
+      "demo": "https://portfoliosilvana.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 2,
+      "title": "Grid",
+      "description": "Grid",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/Grid_harjoitus%20copy",
+      "demo": "https://grid-harjoitus.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 3,
+      "title": "Icebreaker",
+      "description": "Icebreaker - CSS",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/Icebreaker2%20copy",
+      "demo": "https://portfoliosilvana.netlify.app/icebreaker2%20copy/index1",
+      "category": "Html_Css"
+    },
+    {
+      "id": 4,
+      "title": "FlexFest ",
+      "description": "FlexFest - GRID and FLEXBOX",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/01_flex-projecti%20copy",
+      "demo": "https://flexfest.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 5,
+      "title": "08_palloexample - CSS",
+      "description": "08_palloexample",
+      "github": "https://github.com/1967cooder/harjoitukset/blob/main/Portfolio%20Silvana/08_palloexample%20copy/style.css",
+      "demo": "https://palloexample.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 6,
+      "title": "Transition harjoitus",
+      "description": "Transition harjoitus - CSS",
+      "github": "https://github.com/1967cooder/harjoitukset/blob/main/Portfolio%20Silvana/Transition%20harjoitus%20copy/style.css",
+      "demo": "https://transition-portfolio.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 7,
+      "title": "Order-summary",
+      "description": "Order-summary component - CSS",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/order-summary-component-main",
+      "demo": "https://order-summary-card-silva.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 8,
+      "title": "Bento-grid-main",
+      "description": "Bento-grid-main - CSS",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/bento-grid-main%20copy",
+      "demo": "https://bento-grid-main-silvana.netlify.app/",
+      "category": "Html_Css"
+    },
+    {
+      "id": 9,
+      "title": "Lomake",
+      "description": "Lomake",
+      "github": "https://github.com/1967cooder/harjoitukset/blob/main/Portfolio%20Silvana/lomake(task.png)%20copy/styles.css",
+      "demo": "https://lomake-form.netlify.app/",
+      "category": "JavaScript"
+    },
+    {
+      "id": 10,
+      "title": "Pankkiautomaatti",
+      "description": "Pankkiautomaatti",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/Pankkiauttomaatti%20copy",
+      "demo": "https://pankkiautomaatti-silvana.netlify.app/",
+      "category": "JavaScript"
+    },
+    {
+      "id": 11,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3",
+      "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/Pannukakkusivu3%20copy",
+      "demo": "https://pannukakkusivu3.netlify.app/",
+      "category": "JavaScript"
+    },
+    {
+      "id": 12,
+      "title": "icebreaker",
+      "description": "Icebreaker",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 13,
+      "title": "",
+      "description": "",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 14,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3 ",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 15,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 16,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 17,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 18,
+      "title": "Pannukakkusivu3",
+      "description": "Pannukakkusivu3",
+      "github": "",
+      "demo": "",
+      "category": "JavaScript"
+    },
+    {
+      "id": 19,
+      "title": "hrApp",
+      "description": "React application for HR management",
+      "github": "https://github.com/1967cooder/hrApp/tree/Step7",
+      "demo": "https://1967cooder.github.io/hrApp/#/",
+      "category": "React"
+    },
+    {
+      "id": 20,
+      "title": "ABCs of media",
+      "description": "ABCs of media",
+      "github": "https://github.com/1967cooder/ABCs-of-media",
+      "demo": "https://github.com/1967cooder/ABCs-of-media",
+      "category": "WordPress"
+    },
+    {
+      "id": 21,
+      "title": "Kide",
+      "description": "Kide",
+      "github": "https://github.com/1967cooder/kide",
+      "demo": "https://github.com/1967cooder/kide",
+      "category": "WordPress"
+    },
+    {
+      "id": 22,
+      "title": "CV",
+      "description": "CV",
+      "github": "",
+      "demo": "http://127.0.0.1:5502/Portfolio%20Silvana/Documents/cv-english-silvana.pdf",
+      "category": "WordPress",
+      "featured": true
+    },
+    {
+      "id": 23,
+      "title": "Most proud project",
+      "description": "Most proud project",
+      "github": "",
+      "demo": "https://product-list-with-cart-main-copy.netlify.app/",
+      "category": "WordPress",
+      "featured": true
+    },
+    {
+      "id": 24,
+      "title": "Education",
+      "description": "Education",
+      "github": "",
+      "demo": "",
+      "category": "WordPress",
+      "featured": true
+    }
+  ]
+}

@@ -1,23 +1,91 @@
-import React, { useEffect, useState } from "react";
-import CategoryContainer from "./CategoryContainer";
+// import React from "react";
+// import { Box, Typography } from "@mui/material";
+// import CategoryContainer from "./CategoryContainer";
+// // import useAxios from "../hooks/useAxios";
+// import api from "../api/axios";
+// import { useState, useEffect } from "react";
+
+// const Projects = () => {
+//   const [data, setData] = useState([]);
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
+
+//   useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const response = await api.get("/projects"); // ако е static: "/db.json"
+//         setData(response.data.projects || response.data); // за json-server или static db.json);
+//       } catch (err) {
+//         setError(err.message);
+//       } finally {
+//         setLoading(false);
+//       }
+//     };
+
+//     fetchData();
+//   }, []);
+
+//   if (loading) return <p>Loading...</p>;
+//   if (error) return <p>Error loading data</p>;
+
+//   const uniqueCategories = [...new Set(data.map((p) => p.category))];
+
+//   return (
+//     <Box sx={{ p: 3 }}>
+//       <Typography
+//         variant="h4"
+//         sx={{
+//           mb: 3,
+//           textAlign: "left",
+//           background: "linear-gradient(90deg, #00ffea, #7c4dff)",
+//           WebkitBackgroundClip: "text",
+//           WebkitTextFillColor: "transparent",
+//         }}
+//       >
+//         Projects
+//       </Typography>
+
+//       <Box
+//         sx={{
+//           p: 3,
+//           display: "grid",
+//           gridTemplateColumns: {
+//             xs: "1fr",
+//             sm: "repeat(2, 1fr)",
+//             md: "repeat(3, 1fr)",
+//           },
+//           gap: 3,
+//         }}
+//       >
+//         {uniqueCategories.map((category) => (
+//           <CategoryContainer
+//             key={category}
+//             category={category}
+//             projects={data.filter((p) => p.category === category)}
+//           />
+//         ))}
+//       </Box>
+//     </Box>
+//   );
+// };
+
+// export default Projects;
+
+import React from "react";
 import { Box, Typography } from "@mui/material";
+import CategoryContainer from "./CategoryContainer";
+import useAxios from "../hooks/useAxios";
 
 const Projects = () => {
-  const [categories, setCategories] = useState([]);
+  const { data, loading, error } = useAxios("/projects");
 
-  useEffect(() => {
-    fetch("http://localhost:3001/projects")
-      .then((res) => res.json())
-      .then((data) => {
-        const uniqueCategories = [...new Set(data.map((p) => p.category))];
-        setCategories(uniqueCategories);
-      })
-      .catch((err) => console.error(err));
-  }, []);
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>Error loading data: {error}</p>;
+
+  const uniqueCategories = [...new Set(data.map((p) => p.category))];
 
   return (
     <Box sx={{ p: 3 }}>
-      {/* 🔹 Title */}
       <Typography
         variant="h4"
         sx={{
@@ -26,7 +94,11 @@ const Projects = () => {
           background: "linear-gradient(90deg, #00ffea, #7c4dff)",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
-          //   fontWeight: 700,
+          position: "sticky",
+          top: 0,
+          zIndex: 10,
+          backgroundColor: "#111",
+          pb: 2,
         }}
       >
         Projects
@@ -37,15 +109,19 @@ const Projects = () => {
           p: 3,
           display: "grid",
           gridTemplateColumns: {
-            xs: "1fr", // mobile
-            sm: "repeat(2, 1fr)", // tablet
-            md: "repeat(3, 1fr)", // desktop
+            xs: "1fr",
+            sm: "repeat(2, 1fr)",
+            md: "repeat(3, 1fr)",
           },
           gap: 3,
         }}
       >
-        {categories.map((category) => (
-          <CategoryContainer key={category} category={category} />
+        {uniqueCategories.map((category) => (
+          <CategoryContainer
+            key={category}
+            category={category}
+            projects={data.filter((p) => p.category === category)}
+          />
         ))}
       </Box>
     </Box>

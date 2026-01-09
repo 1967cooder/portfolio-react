@@ -2,7 +2,13 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 
-const ProjectCard = ({ description, github, demo }) => {
+const ProjectCard = ({
+  description,
+  github,
+  demo,
+  showLinks = true,
+  demoLabel = "DEMO",
+}) => {
   return (
     <Box
       sx={{
@@ -21,36 +27,44 @@ const ProjectCard = ({ description, github, demo }) => {
       <Typography variant="body1" sx={{ mb: 2, fontSize: "1.3rem" }}>
         {description}
       </Typography>
-      <Button
-        href={github}
-        target="_blank"
-        sx={{
-          background: "linear-gradient(90deg, #00ffea, #7c4dff)",
-          color: "#fff",
-          mb: 1,
-          "&:hover": { opacity: 0.8 },
-        }}
-      >
-        GitHub
-      </Button>
-      <Box
-        sx={{
-          backgroundColor: "#7c4dff",
-          color: "#fff",
-          textAlign: "center",
-          p: 1,
-          borderRadius: 1,
-          mt: 1,
-          cursor: "pointer",
-          fontWeight: "bold",
-          px: 16,
-          py: 1,
-          //   minWidth: "unset",
-        }}
-        onClick={() => window.open(demo, "_blank")}
-      >
-        DEMO
-      </Box>
+
+      {/* GitHub button – само ако има github */}
+      {showLinks && github && (
+        <Button
+          href={github}
+          target="_blank"
+          sx={{
+            background: "linear-gradient(90deg, #00ffea, #7c4dff)",
+            color: "#fff",
+            mb: 1,
+            "&:hover": { opacity: 0.8 },
+          }}
+        >
+          GitHub
+        </Button>
+      )}
+
+      {/* Demo / See more */}
+      {demo && (
+        <Box
+          sx={{
+            backgroundColor: "#7c4dff",
+            color: "#fff",
+            textAlign: "center",
+            p: 1,
+            borderRadius: 1,
+            mt: 1,
+            cursor: "pointer",
+            fontWeight: "bold",
+            px: 16,
+            py: 1,
+            //   minWidth: "unset",
+          }}
+          onClick={() => window.open(demo, "_blank")}
+        >
+          {demoLabel}
+        </Box>
+      )}
     </Box>
   );
 };
