@@ -71,18 +71,87 @@
 
 // export default Projects;
 
+//________________________________________________________________________________
+
+// import React from "react";
+// import { Box, Typography } from "@mui/material";
+// import CategoryContainer from "./CategoryContainer";
+// import useAxios from "../hooks/useAxios";
+
+// const Projects = () => {
+//   const { data, loading, error } = useAxios("http://localhost:3001/projects");
+
+//   if (loading) return <p>Loading...</p>;
+//   if (error) return <p>Error loading data: {error}</p>;
+
+//   const uniqueCategories = [...new Set(data.map((p) => p.category))];
+
+//   return (
+//     <Box sx={{ p: 3 }}>
+//       <Typography
+//         variant="h4"
+//         sx={{
+//           mb: 3,
+//           textAlign: "left",
+//           background: "linear-gradient(90deg, #00ffea, #7c4dff)",
+//           WebkitBackgroundClip: "text",
+//           WebkitTextFillColor: "transparent",
+//           position: "sticky",
+//           top: 0,
+//           zIndex: 10,
+//           backgroundColor: "#111",
+//           pb: 2,
+//         }}
+//       >
+//         Projects
+//       </Typography>
+
+//       <Box
+//         sx={{
+//           p: 3,
+//           display: "grid",
+//           gridTemplateColumns: {
+//             xs: "1fr",
+//             sm: "repeat(2, 1fr)",
+//             md: "repeat(3, 1fr)",
+//           },
+//           gap: 3,
+//         }}
+//       >
+//         {uniqueCategories.map((category) => (
+//           <CategoryContainer
+//             key={category}
+//             category={category}
+//             projects={data.filter((p) => p.category === category)}
+//           />
+//         ))}
+//       </Box>
+//     </Box>
+//   );
+// };
+
+// export default Projects;
+//________________________________________________________________________________
+
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import CategoryContainer from "./CategoryContainer";
 import useAxios from "../hooks/useAxios";
 
 const Projects = () => {
-  const { data, loading, error } = useAxios("/projects");
+  const {
+    data = [],
+    loading,
+    error,
+  } = useAxios("http://localhost:3001/projects");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data: {error}</p>;
 
-  const uniqueCategories = [...new Set(data.map((p) => p.category))];
+  // уникални категории
+  const uniqueCategories = [
+    ...new Set(data.map((p) => p.category).filter(Boolean)),
+  ];
 
   return (
     <Box sx={{ p: 3 }}>
@@ -118,9 +187,8 @@ const Projects = () => {
       >
         {uniqueCategories.map((category) => (
           <CategoryContainer
-            key={category}
+            key={category} // уникален ключ
             category={category}
-            projects={data.filter((p) => p.category === category)}
           />
         ))}
       </Box>

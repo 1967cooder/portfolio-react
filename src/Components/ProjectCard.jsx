@@ -22,6 +22,13 @@ const ProjectCard = ({
         gap: 2,
         alignItems: "center",
         boxShadow: "0 0 12px rgba(124, 77, 255, 0.7)",
+        transition: "transform 0.2s, box-shadow 0.2s, background 0.2s",
+        cursor: "pointer",
+        "&:hover": {
+          transform: "translateY(-4px)",
+          boxShadow: "0 0 20px rgba(124, 77, 255, 0.9)",
+          background: "linear-gradient(135deg, #222, #333)",
+        },
       }}
     >
       <Typography variant="body1" sx={{ mb: 2, fontSize: "1.3rem" }}>

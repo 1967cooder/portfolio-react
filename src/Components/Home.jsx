@@ -164,6 +164,7 @@ const Home = () => {
           />
         ))}
       </Box>
+
       {/* Външен контейнер за центриране */}
       <Box sx={{ display: "flex", justifyContent: "center", mt: 8 }}>
         {/* Вътрешен Box с иконки и форма */}
