@@ -257,8 +257,7 @@
       "title": "CV",
       "description": "CV",
       "github": "",
-      "demo": "http://127.0.0.1:5502/Portfolio%20Silvana/Documents/cv-english-silvana.pdf",
-      "category": "WordPress",
+      "demo": "https://portfoliosilvana.netlify.app/Documents/cv-english-silvana.pdf",
       "featured": true
     },
     {
@@ -267,7 +266,6 @@
       "description": "Most proud project",
       "github": "",
       "demo": "https://product-list-with-cart-main-copy.netlify.app/",
-      "category": "WordPress",
       "featured": true
     },
     {
@@ -276,7 +274,6 @@
       "description": "Education",
       "github": "",
       "demo": "",
-
       "featured": true
     }
   ]
