@@ -5,7 +5,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 // import DiscordIcon from "@mui/icons-material/Discord";
 import useAxios from "../hooks/useAxios";
-import profilePic from "../assets/profilePic.jpeg";
+// import profilePic from "../assets/profilePic.jpeg";
+// import InteractiveSphereScene from "./InteractiveSphereScene";
+import InteractiveModel from "./InteractiveModel";
 
 const Home = () => {
   const { data, loading, error } = useAxios("/projects");
@@ -48,6 +50,26 @@ const Home = () => {
         it's done." - Nelson Mandela
       </Typography>
 
+      {/* <Box
+        sx={{
+          width: { xs: "300px", md: "800px" },
+          height: { xs: "300px", md: "500px" },
+        }}
+      >
+        <InteractiveSphereScene />
+      </Box> */}
+      <Box
+        sx={{
+          width: { xs: "300px", md: "800px" },
+          height: { xs: "300px", md: "500px" },
+          mx: "auto",
+          mb: 4,
+          mt: 3,
+        }}
+      >
+        <InteractiveModel />
+      </Box>
+
       {/* About section */}
       <Box
         sx={{
@@ -60,7 +82,7 @@ const Home = () => {
         }}
       >
         {/* Image Left */}
-        <Box
+        {/* <Box
           component="img"
           src={profilePic}
           alt="Silvana Lindholm"
@@ -70,7 +92,7 @@ const Home = () => {
             borderRadius: "2",
             border: "4px solid #00ffea",
           }}
-        />
+        /> */}
         {/* Text Right */}
         <Box sx={{ flex: 1 }}>
           <Typography
@@ -96,8 +118,8 @@ const Home = () => {
             }}
           >
             I am currently studying at a Business College, specializing in the
-            Tieto- ja viestintätekniikan perustutkinto (Vocational Qualification
-            in Information and Communication Technology).
+            (Vocational Qualification in Information and Communication
+            Technology).
           </Typography>
 
           <Typography

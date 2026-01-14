@@ -12,16 +12,16 @@ const Layout = () => {
         sx={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}
       >
         <Header />
-        <div>
-          <Container
-            component="main"
-            maxWidth="lg"
-            sx={{ flexGrow: 1, mt: 4, mb: 4 }}
-            background-colot="black"
-          >
-            <Outlet />
-          </Container>
-        </div>
+        {/* <div> */}
+        <Container
+          component="main"
+          maxWidth="lg"
+          sx={{ flexGrow: 1, mt: 4, mb: 4 }}
+          background-color="black"
+        >
+          <Outlet />
+        </Container>
+        {/* </div> */}
         <Footer />
       </Box>
     </>

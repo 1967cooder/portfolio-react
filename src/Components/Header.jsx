@@ -5,14 +5,19 @@ import Toolbar from "@mui/material/Toolbar";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg";
 
 const Header = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Logo
-        </Typography>
+        <Box
+          component="img"
+          sx={{ height: 40 }} // регулираш височината
+          alt="Logo"
+          src={logo}
+        />
+        <Box sx={{ flexGrow: 1 }} /> {/* за да бутне бутоните надясно */}
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
           <Button color="inherit" component={Link} to="/">
             Home
