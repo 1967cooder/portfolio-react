@@ -19,16 +19,52 @@ const Header = () => {
         />
         <Box sx={{ flexGrow: 1 }} /> {/* за да бутне бутоните надясно */}
         <Box sx={{ display: "flex", gap: 2, alignItems: "center" }}>
-          <Button color="inherit" component={Link} to="/">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/"
+            sx={{
+              "&:hover": {
+                backgroundColor: (theme) => theme.palette.secondary.main + 80, // прозрачност 20%
+              },
+            }}
+          >
             Home
           </Button>
-          <Button color="inherit" component={Link} to="/about">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/about"
+            sx={{
+              "&:hover": {
+                backgroundColor: (theme) => theme.palette.secondary.main + 80, // прозрачност 20%
+              },
+            }}
+          >
             About
           </Button>
-          <Button color="inherit" component={Link} to="/projects">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/projects"
+            sx={{
+              "&:hover": {
+                backgroundColor: (theme) => theme.palette.secondary.main + 80, // прозрачност 20%
+              },
+            }}
+          >
             Projects
           </Button>
-          <Button color="inherit" component={Link} to="/skills">
+          <Button
+            color="inherit"
+            component={Link}
+            to="/skills"
+            sx={{
+              "&:hover": {
+                backgroundColor: (theme) => theme.palette.secondary.main + 80, // прозрачност 20%
+              },
+            }}
+          >
             Skills
           </Button>
           {/* <Button color="inherit" component={Link} to="/employeesTable">

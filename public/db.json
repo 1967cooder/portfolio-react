@@ -140,7 +140,7 @@
       "title": "Hands_free_Paavo",
       "description": "Hands_free_Paavo",
       "github": "https://github.com/1967cooder/harjoitukset/tree/main/Portfolio%20Silvana/hands_free_paavo",
-      "demo": "http://127.0.0.1:5502/Portfolio%20Silvana/hands_free_paavo/index.html",
+      "demo": "https://hands-free-paavo.netlify.app/",
       "category": "Others",
       "featured": false
     },
@@ -272,8 +272,20 @@
       "id": 31,
       "title": "Education",
       "description": "Education",
+      "type": "education",
+      "github": "",
+      "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7322905654615072768/",
+      "certificatePdf": "/certificates/ict.pdf",
+      "featured": true
+    },
+    {
+      "id": 32,
+      "title": "Education",
+      "description": "Education",
+      "type": "education",
       "github": "",
       "demo": "",
+      "certificatePdf": "/certificates/ict.pdf",
       "featured": true
     }
   ]

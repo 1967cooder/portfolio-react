@@ -1,8 +1,121 @@
+// src/Components/Skills.jsx
+import React from "react";
+import { Box, Typography } from "@mui/material";
+
+// Списък с умения + логота
+const skills = [
+  {
+    name: "React",
+    logo: "/logos/React (1).svg", // сложи картинката в /public/logos/
+  },
+  {
+    name: "JavaScript",
+    logo: "/logos/javascript-seeklogo.com.svg",
+  },
+  {
+    name: "HTML5",
+    logo: "/logos/HTML5_logo_and_wordmark.svg",
+  },
+  {
+    name: "CSS3",
+    logo: "/logos/css-3.svg",
+  },
+  {
+    name: "Node.js",
+    logo: "/logos/images.png",
+  },
+  {
+    name: "Git",
+    logo: "/logos/github-icon-logo-png_seeklogo-503247.png",
+  },
+  {
+    name: "SQL",
+    logo: "/logos/sql-database.svg",
+  },
+  {
+    name: "WordPress",
+    logo: "/logos/WordPress_blue_logo.svg.png",
+  },
+  {
+    name: "PHP",
+    logo: "/logos/PHP-logo.svg.png",
+  },
+];
+
 const Skills = () => {
   return (
-    <div>
-      <h1>Skills</h1>
-    </div>
+    <Box sx={{ p: 4 }}>
+      <Typography
+        variant="h3"
+        sx={{
+          mb: 4,
+          textAlign: "left",
+          background: "linear-gradient(90deg, #00ffea, #7c4dff)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor: "transparent",
+        }}
+      >
+        My Skills
+      </Typography>
+
+      <Box
+        sx={{
+          mt: 8,
+          display: "grid",
+          gridTemplateColumns: {
+            xs: "repeat(2, 1fr)",
+            sm: "repeat(4, 1fr)",
+            md: "repeat(6, 1fr)",
+          },
+          gap: 4,
+          justifyItems: "center",
+        }}
+      >
+        {skills.map((skill) => (
+          <Box
+            key={skill.name}
+            sx={{
+              backgroundColor: "#222",
+              borderRadius: 2,
+              p: 2,
+              width: 150,
+              height: 150,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              boxShadow: "0 0 12px rgba(124, 77, 255, 0.7)",
+              transition: "0.3s",
+              "&:hover": {
+                transform: "translateY(-5px)",
+                boxShadow: "0 0 20px rgba(124, 77, 255, 0.9)",
+              },
+            }}
+          >
+            <Box
+              component="img"
+              src={skill.logo}
+              alt={skill.name}
+              sx={{
+                width: 100,
+                height: 100,
+                mb: 1,
+                objectFit: "contain",
+              }}
+            />
+            <Typography
+              variant="body2"
+              sx={{
+                color: "white",
+                fontWeight: "bold",
+              }}
+            >
+              {skill.name}
+            </Typography>
+          </Box>
+        ))}
+      </Box>
+    </Box>
   );
 };
 

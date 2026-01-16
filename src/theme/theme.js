@@ -6,7 +6,7 @@ const theme = createTheme({
       main: "#7c4dff", // лилаво
     },
     secondary: {
-      main: "#ff9100", // оранжево
+      main: "#00ffea", // циан
     },
     background: {
       default: "#000000", // черен фон
