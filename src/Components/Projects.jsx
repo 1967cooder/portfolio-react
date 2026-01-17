@@ -139,11 +139,7 @@ import CategoryContainer from "./CategoryContainer";
 import useAxios from "../hooks/useAxios";
 
 const Projects = () => {
-  const {
-    data = [],
-    loading,
-    error,
-  } = useAxios("http://localhost:3001/projects");
+  const { data = [], loading, error } = useAxios("/db.json");
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error loading data: {error}</p>;
@@ -156,7 +152,7 @@ const Projects = () => {
   return (
     <Box sx={{ p: 3 }}>
       <Typography
-        variant="h4"
+        variant="h3"
         sx={{
           mb: 3,
           textAlign: "left",

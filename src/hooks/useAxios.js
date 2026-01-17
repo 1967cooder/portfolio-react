@@ -35,9 +35,11 @@
 // };
 
 // export default useAxios;
+//--------------------------------------------
 
 import { useState, useEffect } from "react";
-import api from "../api/axios";
+// import api from "../api/axios"; kogato izpolzvash http://localhost:3001/projects v Components
+import axios from "axios";
 
 const useAxios = (url) => {
   const [data, setData] = useState(null);
@@ -49,7 +51,7 @@ const useAxios = (url) => {
 
     const fetchData = async () => {
       try {
-        const response = await api.get(url);
+        const response = await axios.get(url); //smeni s api.get(url) kogato izpolzvash http://localhost:3001/projects v Components
         if (isMounted) {
           setData(response.data.projects || response.data); // поддържа json-server или static db.json
         }

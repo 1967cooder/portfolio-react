@@ -313,15 +313,12 @@ import { Box, Typography, Button, TextField, IconButton } from "@mui/material";
 import ProjectCard from "./ProjectCard";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailIcon from "@mui/icons-material/Email";
 import useAxios from "../hooks/useAxios";
 import InteractiveModel from "./InteractiveModel";
 
 const Home = () => {
-  const {
-    data = [],
-    loading,
-    error,
-  } = useAxios("http://localhost:3001/projects");
+  const { data = [], loading, error } = useAxios("/db.json");
 
   if (loading) return <p>Loading projects...</p>;
   if (error) return <p>Error loading projects: {error}</p>;
@@ -391,7 +388,7 @@ const Home = () => {
       </Box>
 
       {/* Under Construction */}
-      <Typography
+      {/* <Typography
         variant="h3"
         sx={{
           textAlign: "center",
@@ -402,7 +399,7 @@ const Home = () => {
         }}
       >
         Under Construction
-      </Typography>
+      </Typography> */}
 
       {/* About section */}
       <Box
@@ -416,7 +413,7 @@ const Home = () => {
       >
         <Box sx={{ flex: 1 }}>
           <Typography
-            variant="h4"
+            variant="h3"
             sx={{
               mb: 2,
               background: "linear-gradient(90deg, #00ffea, #7c4dff)",
@@ -511,7 +508,14 @@ const Home = () => {
       </Box>
 
       {/* Contact section */}
-      <Box sx={{ display: "flex", justifyContent: "center", mt: 8 }}>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          mt: 8,
+          alignItems: "center",
+        }}
+      >
         <Box
           sx={{
             display: "flex",
@@ -519,7 +523,7 @@ const Home = () => {
             gap: 6,
             alignItems: "stretch",
             width: "100%",
-            maxWidth: 800,
+            maxWidth: 700,
           }}
         >
           {/* Icons column */}
@@ -541,12 +545,20 @@ const Home = () => {
             >
               <GitHubIcon fontSize="large" />
             </IconButton>
+
             <IconButton
               href="https://www.linkedin.com/in/silvanalindholm/"
               target="_blank"
               sx={{ color: "white" }}
             >
               <LinkedInIcon fontSize="large" />
+            </IconButton>
+
+            <IconButton
+              href="mailto:silvanalindholm@hotmail.com"
+              sx={{ color: "white" }}
+            >
+              <EmailIcon fontSize="large" />
             </IconButton>
           </Box>
 
@@ -559,7 +571,7 @@ const Home = () => {
                 background: "linear-gradient(90deg, #00ffea, #7c4dff)",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-                textAlign: "left",
+                textAlign: "center",
               }}
             >
               Contact Me
@@ -569,10 +581,16 @@ const Home = () => {
               name="contact" //for Netlify
               method="POST" //for Netlify
               data-netlify="true" //for Netlify
+              action="/thank-you" //for Netlify
               sx={{ display: "flex", flexDirection: "column", gap: 2 }}
             >
               {/* Hidden input for Netlify */}
-              <input type="hidden" name="form-name" value="contact" />
+              <input
+                type="hidden"
+                id="form-name"
+                name="form-name"
+                value="contact"
+              />
 
               <TextField
                 label="Name"

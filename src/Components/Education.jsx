@@ -4,11 +4,7 @@ import EducationCard from "./EducationCard";
 import useAxios from "../hooks/useAxios";
 
 const Education = () => {
-  const {
-    data = [],
-    loading,
-    error,
-  } = useAxios("http://localhost:3001/projects");
+  const { data = [], loading, error } = useAxios("/db.json");
 
   if (loading) return <p>Loading education...</p>;
   if (error) return <p>Error loading education</p>;

@@ -31,7 +31,7 @@ const About = () => {
       {/* Text Right */}
       <Box sx={{ flex: 1 }}>
         <Typography
-          variant="h4"
+          variant="h3"
           sx={{
             mb: 2,
             background: "linear-gradient(90deg, #00ffea, #7c4dff)",

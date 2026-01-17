@@ -228,11 +228,7 @@ const CategoryProjects = () => {
 
   if (!category) return null;
 
-  const {
-    data = [],
-    loading,
-    error,
-  } = useAxios("http://localhost:3001/projects");
+  const { data = [], loading, error } = useAxios("/db.json");
 
   if (loading) return <p>Loading projects...</p>;
   if (error) return <p>Error loading projects: {error}</p>;

@@ -12,6 +12,8 @@ const EducationCard = ({ title, description, link, certificatePdf }) => {
         borderRadius: 2,
         display: "flex",
         flexDirection: "column",
+        alignItems: "center", // ✅ център хоризонтално
+        textAlign: "center", // ✅ център на текста
         gap: 2,
         boxShadow: "0 0 12px rgba(124, 77, 255, 0.7)",
         transition: "0.3s",
@@ -35,7 +37,15 @@ const EducationCard = ({ title, description, link, certificatePdf }) => {
 
       <Typography variant="body2">{description}</Typography>
 
-      <Box sx={{ display: "flex", gap: 2, mt: "auto" }}>
+      <Box
+        sx={{
+          display: "flex",
+          gap: 2,
+          mt: "auto",
+          justifyContent: "center",
+          flexWrap: "wrap",
+        }}
+      >
         {link && (
           <Button
             href={link}
