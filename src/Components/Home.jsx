@@ -906,6 +906,7 @@ const Home = () => {
               name="contact"
               method="POST"
               data-netlify="true"
+              data-netlify-honeypot="bot-field" //against spam bots
               action="/thank-you"
               sx={{ display: "flex", flexDirection: "column", gap: 2 }}
             >
@@ -915,7 +916,7 @@ const Home = () => {
                 name="form-name"
                 value="contact"
               />
-
+              <input type="hidden" name="bot-field" />
               <TextField
                 label="Name"
                 variant="outlined"
