@@ -33,19 +33,19 @@ It’s not only a collection of projects, but also a reflection of my growth as 
 
 ## Screenshots
 
-![Portfolio Homepage Screenshot](./src/assets/images/homepage.png)
+![Portfolio Homepage Screenshot](./src/assets/images/home.png)
 ![Portfolio About Screenshot](./src/assets/images/about.png)
 ![Portfolio Projects Screenshot](./src/assets/images/projects.png)
 ![Portfolio HTML Projects Screenshot](./src/assets/images/html_projects.png)
 ![Portfolio Skills Screenshot](./src/assets/images/skills.png)
-![Portfolio Mobile Screenshot](./src/assets/images/mobile.png)
-![Portfolio Mobile1 Screenshot](<./src/assets/images/mobile(1).png>)
+![Portfolio Mobile Screenshot](./src/assets/images/mobile0.png)
+![Portfolio Mobile1 Screenshot](./src/assets/images/mobile1.png)
 
 ## Live Demo
 
 Explore my portfolio live here:
 
-Portfolio: [Live Demo]()
+Portfolio: [Live Demo](https://portfolio-react-silvana.netlify.app/)
 
 ## GitHub
 
@@ -102,7 +102,7 @@ The app will be running at http://localhost:3000
 
 ## Projects
 
-Here are several HTML, CSS, JavaScript projects I've developed. You can explore the source code, and also see live version and more details on my [Portfolio website](https://portfoliosilvana.netlify.app/)
+Here are several HTML, CSS, JavaScript projects I've developed. You can explore the source code, and also see live version and more details on my [Portfolio website](https://portfolio-react-silvana.netlify.app/)
 
 ## JavaScript projectts
 
