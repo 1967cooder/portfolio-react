@@ -6,7 +6,7 @@
     <title>Thank You!</title>
     <style>
       body {
-        font-family: "Arial", sans-serif;
+        font-family: Arial, sans-serif;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -16,16 +16,22 @@
         color: white;
         text-align: center;
       }
+
       h1 {
         font-size: 3rem;
         background: linear-gradient(90deg, #00ffea, #7c4dff);
+        color: #00ffea; /* fallback color */
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        background-clip: text; /* стандартен fallback */
         margin-bottom: 1rem;
       }
+
       p {
         font-size: 1.5rem;
+        margin: 0.5rem 0;
       }
+
       a {
         display: inline-block;
         margin-top: 2rem;
@@ -35,10 +41,17 @@
         text-decoration: none;
         border-radius: 5px;
         font-weight: bold;
+        transition: 0.3s ease;
       }
+
       a:hover {
         background: #7c4dff;
         color: white;
+      }
+
+      /* Optional: добавя малко padding на контейнера за мобилни */
+      div {
+        padding: 0 1rem;
       }
     </style>
   </head>
