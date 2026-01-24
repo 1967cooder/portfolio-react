@@ -60,7 +60,7 @@ const EducationCard = ({ title, description, link, certificatePdf }) => {
           </Button>
         )}
 
-        {certificatePdf && (
+        {certificatePdf?.trim().length > 0 && (
           <Button
             href={certificatePdf}
             target="_blank"

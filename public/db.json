@@ -260,6 +260,7 @@
       "demo": "https://portfoliosilvana.netlify.app/Documents/cv-english-silvana.pdf",
       "featured": true
     },
+
     {
       "id": 30,
       "title": "Most proud project",
@@ -271,51 +272,61 @@
     {
       "id": 31,
       "title": "Education",
+      "description": "education",
+      "type": "",
+      "github": "",
+      "demo": "",
+      "featured": true
+    },
+
+    {
+      "id": 32,
+      "title": "Education",
       "description": "HTTP Essential Training",
       "type": "education",
       "github": "",
       "demo": "https://www.linkedin.com/feed/update/urn:li:activity:7322905654615072768/",
-      "certificatePdf": "/certificates/ict.pdf",
-      "featured": true
-    },
-    {
-      "id": 32,
-      "title": "Education",
-      "description": "React Essential Training",
-      "type": "education",
-      "github": "",
-      "demo": "https://www.linkedin.com/learning/certificates/b2e1b92f60b7d01e500c2afe590a8db37b64f271fba4ab89427a6e24ebfc3871?trk=share_certificate&accountId=99655914&u=99655914&success=true&authUUID=4qo6efMMTFem%2FevRsxMRVg%3D%3D",
-      "certificatePdf": "/certificates/ict.pdf",
+      "certificatePdf": null,
       "featured": true
     },
     {
       "id": 33,
       "title": "Education",
-      "description": "React Practice for Beginners: Build and Modify Basic Components",
+      "description": "React Essential Training",
       "type": "education",
       "github": "",
-      "demo": "https://www.linkedin.com/learning/certificates/80e43a6580c1f29813e84d831aba22aa869efc41492bb54e6ca2f08013c2e72c?u=99655914",
-      "certificatePdf": "/certificates/ict.pdf",
+      "demo": "https://www.linkedin.com/learning/certificates/b2e1b92f60b7d01e500c2afe590a8db37b64f271fba4ab89427a6e24ebfc3871?trk=share_certificate&accountId=99655914&u=99655914&success=true&authUUID=4qo6efMMTFem%2FevRsxMRVg%3D%3D",
+      "certificatePdf": null,
       "featured": true
     },
     {
       "id": 34,
       "title": "Education",
-      "description": "WordPress Essential Training",
+      "description": "React Practice for Beginners: Build and Modify Basic Components",
       "type": "education",
       "github": "",
-      "demo": "https://www.linkedin.com/learning/certificates/075bebe37cf5f40cd1c9d3dc2e2524536f89771cba6f2eb6b84000a054d7d923?u=99655914",
-      "certificatePdf": "/certificates/ict.pdf",
+      "demo": "https://www.linkedin.com/learning/certificates/80e43a6580c1f29813e84d831aba22aa869efc41492bb54e6ca2f08013c2e72c?u=99655914",
+      "certificatePdf": null,
       "featured": true
     },
     {
       "id": 35,
       "title": "Education",
+      "description": "WordPress Essential Training",
+      "type": "education",
+      "github": "",
+      "demo": "https://www.linkedin.com/learning/certificates/075bebe37cf5f40cd1c9d3dc2e2524536f89771cba6f2eb6b84000a054d7d923?u=99655914",
+      "certificatePdf": null,
+      "featured": true
+    },
+    {
+      "id": 36,
+      "title": "Education",
       "description": "Introducion to WordPress Block Themes",
       "type": "education",
       "github": "",
       "demo": "https://www.linkedin.com/learning/certificates/8ce323a5a3fd579252653af7350c753091b2406f883edd4346e433875c057aed?u=99655914",
-      "certificatePdf": "/certificates/ict.pdf",
+      "certificatePdf": null,
       "featured": true
     }
   ]
