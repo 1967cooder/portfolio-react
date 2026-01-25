@@ -240,11 +240,11 @@ const Header = () => {
       </List>
     </Box>
   );
-
+  //zIndex: 1100 → стои НАД съдържанието
   return (
     <AppBar
-      position="static"
-      sx={{ backgroundColor: "#7c4dff" }} // винаги лилав фон
+      position="sticky"
+      sx={{ top: 0, zIndex: 1100, backgroundColor: "#7c4dff" }} // винаги лилав фон
     >
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         {/* Лого */}

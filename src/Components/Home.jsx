@@ -760,8 +760,8 @@ const Home = () => {
             }}
           >
             I am currently studying at a Business College, specializing in the
-            (Vocational Qualification in Information and Communication
-            Technology).
+            Vocational Qualification in Information and Communication
+            Technology.
           </Typography>
 
           <Typography
