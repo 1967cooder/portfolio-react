@@ -263,6 +263,15 @@
     },
     {
       "id": 30,
+      "title": "Kide-hero-block with background",
+      "description": "Custom made plugin with react",
+      "github": "https://github.com/1967cooder/Kide-hero-block-2",
+      "demo": "https://github.com/1967cooder/Kide-hero-block-2",
+      "category": "WordPress",
+      "featured": false
+    },
+    {
+      "id": 31,
       "title": "CV",
       "description": "CV",
       "github": "",
@@ -271,7 +280,7 @@
     },
 
     {
-      "id": 31,
+      "id": 32,
       "title": "Most proud project",
       "description": "Most proud project",
       "github": "",
@@ -279,7 +288,7 @@
       "featured": true
     },
     {
-      "id": 32,
+      "id": 33,
       "title": "Education",
       "description": "education",
       "type": "",
@@ -289,7 +298,7 @@
     },
 
     {
-      "id": 33,
+      "id": 34,
       "title": "Education",
       "description": "HTTP Essential Training",
       "type": "education",
@@ -299,7 +308,7 @@
       "featured": true
     },
     {
-      "id": 34,
+      "id": 35,
       "title": "Education",
       "description": "React Essential Training",
       "type": "education",
@@ -309,7 +318,7 @@
       "featured": true
     },
     {
-      "id": 35,
+      "id": 36,
       "title": "Education",
       "description": "React Practice for Beginners: Build and Modify Basic Components",
       "type": "education",
@@ -319,7 +328,7 @@
       "featured": true
     },
     {
-      "id": 36,
+      "id": 37,
       "title": "Education",
       "description": "WordPress Essential Training",
       "type": "education",
@@ -329,7 +338,7 @@
       "featured": true
     },
     {
-      "id": 37,
+      "id": 38,
       "title": "Education",
       "description": "Introducion to WordPress Block Themes",
       "type": "education",
