@@ -254,8 +254,8 @@
     },
     {
       "id": 29,
-      "title": "Kide-hero-block",
-      "description": "Custom made plugin with grid",
+      "title": "Kide-hero-block with grid",
+      "description": "Custom made plugin with react",
       "github": "https://github.com/1967cooder/Kide-hero-block",
       "demo": "https://github.com/1967cooder/Kide-hero-block",
       "category": "WordPress",
