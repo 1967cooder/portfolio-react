@@ -33,12 +33,20 @@ const skills = [
     logo: "/logos/sql-database.svg",
   },
   {
+    name: "Docker",
+    logo: "/logos/docker.svg",
+  },
+  {
     name: "WordPress",
     logo: "/logos/WordPress_blue_logo.svg.png",
   },
   {
     name: "PHP",
     logo: "/logos/PHP-logo.svg.png",
+  },
+  {
+    name: "Figma",
+    logo: "/logos/figma.svg",
   },
 ];
 
