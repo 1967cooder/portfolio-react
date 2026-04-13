@@ -245,6 +245,15 @@
     },
     {
       "id": 28,
+      "title": "stockflow",
+      "description": "Inventory management platform.",
+      "github": "https://github.com/1967cooder/stockflow",
+      "demo": "https://github.com/1967cooder/stockflow",
+      "category": "React",
+      "featured": false
+    },
+    {
+      "id": 29,
       "title": "ABCs of media",
       "description": "ABCs of media",
       "github": "https://github.com/1967cooder/ABCs-of-media",
@@ -253,7 +262,7 @@
       "featured": false
     },
     {
-      "id": 29,
+      "id": 30,
       "title": "Kide",
       "description": "Kide-WordPress with React",
       "github": "https://github.com/1967cooder/kide",
@@ -262,7 +271,7 @@
       "featured": false
     },
     {
-      "id": 30,
+      "id": 31,
       "title": "Kide-hero-block with grid",
       "description": "Custom made plugin with react",
       "github": "https://github.com/1967cooder/Kide-hero-block",
@@ -271,7 +280,7 @@
       "featured": false
     },
     {
-      "id": 31,
+      "id": 32,
       "title": "Kide-hero-block with background",
       "description": "Custom made plugin with react",
       "github": "https://github.com/1967cooder/Kide-hero-block-2",
@@ -280,7 +289,7 @@
       "featured": false
     },
     {
-      "id": 32,
+      "id": 33,
       "title": "CV",
       "description": "CV",
       "github": "",
@@ -289,7 +298,7 @@
     },
 
     {
-      "id": 33,
+      "id": 34,
       "title": "Most proud project",
       "description": "Most proud project",
       "github": "",
@@ -297,7 +306,7 @@
       "featured": true
     },
     {
-      "id": 34,
+      "id": 35,
       "title": "Education",
       "description": "education",
       "type": "",
@@ -307,7 +316,7 @@
     },
 
     {
-      "id": 35,
+      "id": 36,
       "title": "Education",
       "description": "HTTP Essential Training",
       "type": "education",
@@ -317,7 +326,7 @@
       "featured": true
     },
     {
-      "id": 36,
+      "id": 37,
       "title": "Education",
       "description": "React Essential Training",
       "type": "education",
@@ -327,7 +336,7 @@
       "featured": true
     },
     {
-      "id": 37,
+      "id": 38,
       "title": "Education",
       "description": "React Practice for Beginners: Build and Modify Basic Components",
       "type": "education",
@@ -337,7 +346,7 @@
       "featured": true
     },
     {
-      "id": 38,
+      "id": 39,
       "title": "Education",
       "description": "WordPress Essential Training",
       "type": "education",
@@ -347,7 +356,7 @@
       "featured": true
     },
     {
-      "id": 39,
+      "id": 40,
       "title": "Education",
       "description": "Introducion to WordPress Block Themes",
       "type": "education",
