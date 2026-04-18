@@ -48,6 +48,30 @@ const skills = [
     name: "Figma",
     logo: "/logos/figma.svg",
   },
+  {
+    name: "Nextjs",
+    logo: "/logos/nextjs.png",
+  },
+  {
+    name: "Expo Go",
+    logo: "/logos/expo-go-app.svg",
+  },
+  {
+    name: "Supabase",
+    logo: "/logos/supabase.jpeg",
+  },
+  {
+    name: "Vercel",
+    logo: "/logos/vercel.jpg",
+  },
+  {
+    name: "Netlify",
+    logo: "/logos/netlify.png",
+  },
+  {
+    name: "Strapi",
+    logo: "/logos/strapi-icon-logo.png",
+  },
 ];
 
 const Skills = () => {
