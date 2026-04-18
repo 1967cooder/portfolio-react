@@ -171,7 +171,7 @@ This is a solution to the [Frontend Mentor Bento Grid challenge](https://www.fro
 
 ### React projects
 
-## React application for HR management
+## React application for HR management hrApp
 
 HR App is a web application for managing employees (Human Resources). The app allows users to view, add, and manage employee data through a clean and user-friendly interface.
 
@@ -184,7 +184,31 @@ responsive design
 separate HR Mock API hosted on Render for demonstration purposes
 
 - [GitHub pages Demo] (https://1967cooder.github.io/hrApp/#/)
+
 - [GitHub Repository](https://github.com/1967cooder/hrApp/tree/Step7)
+
+## Inventory menagment platform stockflow
+
+Stockflow is a web application for managing inventory, orders, and products. It provides an interface for adding, editing, and tracking products, processing orders, and keeping notes, as well as AI integration for automation and analysis.PHP (Slim Framework)- backend and JavaScript (React) - frontend.
+
+- [GitHub pages Demo] (https://github.com/1967cooder/stockflow)
+
+## Team members menagement demo-basics
+
+A simple web app for managing team members.
+Users can add, edit, and view member information through a clean interface built with HTML, CSS, and JavaScript.
+
+- [GitHub pages Demo] (https://github.com/1967cooder/demo-basics/tree/week9w)
+
+- [GitHub pages] (https://1967cooder.github.io/demo-basics/#/)
+
+## Next.js demo nextjs-example
+
+This is a demo nexjs-example is application showcasing a modern web app structure using the Next.js App Router.
+
+- [GitHub pages] (https://github.com/1967cooder/nextjs-example)
+
+- [Vercel page] (https://nextjs-example-peach.vercel.app/products)
 
 ### WordPress projects
 
